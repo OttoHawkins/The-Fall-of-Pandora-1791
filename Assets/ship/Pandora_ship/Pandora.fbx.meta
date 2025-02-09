@@ -1,0 +1,497 @@
+fileFormatVersion: 2
+guid: 6d9171fc79457da458ab880d5afa905a
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pandora_d_2
+    second: {fileID: 2100000, guid: 67c89dc031369f84eb5eb11b96007ccd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cannons_234
+    second: {fileID: 2100000, guid: f4efd87173eec1140bed20502d656cb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cannons_2345678
+    second: {fileID: 2100000, guid: f7a29bae8115580429c45debb22fece8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: deck
+    second: {fileID: 2100000, guid: 5aaf0f075a6771f40a8fce5867993641, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: devka
+    second: {fileID: 2100000, guid: 460899735e9225040af28928435b4782, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass_dirt
+    second: {fileID: 2100000, guid: d45b8b9dfa4452f44b0f97499389c1b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gun
+    second: {fileID: 2100000, guid: cfc97e97f623f994782469f891d18ea2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lamp
+    second: {fileID: 2100000, guid: 6a8d3aa6868e6d3489dcbc9315f57e6f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: masts_2
+    second: {fileID: 2100000, guid: a0ecddb839932cf41bd65987d6bbead2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: masts_constructor
+    second: {fileID: 2100000, guid: 055f05e249c90284ca3e8026c798d2f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: net_001
+    second: {fileID: 2100000, guid: 4bc5acca3ca3d354294b9b6963df70eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: painted_wood
+    second: {fileID: 2100000, guid: f711595698303cd4b9b5907f537bb885, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pandora_d
+    second: {fileID: 2100000, guid: 809099577ea82d04d98eee9f1b79ccbf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rail_wood
+    second: {fileID: 2100000, guid: 441475f2b699d924093141493a720355, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rail_wood_yellow
+    second: {fileID: 2100000, guid: 952c7eb7705615c43b30ada3c23a7c97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rail_wood_yellow_2
+    second: {fileID: 2100000, guid: b43f7421f6df4994486f99a2dc9025e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: railing4321
+    second: {fileID: 2100000, guid: f0a2783573f02034184d465ebb0bf396, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: restangle
+    second: {fileID: 2100000, guid: 9725541a06f23cd4b98e407ba49ea7a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rope
+    second: {fileID: 2100000, guid: 0d23c70d5abb64644820f4f351ce129b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rope_vant
+    second: {fileID: 2100000, guid: 696877cf00c2b2443840fc3358d7114f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sail_centre
+    second: {fileID: 2100000, guid: 90d484f79cb89404da0b301900f664ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sail_centre2
+    second: {fileID: 2100000, guid: c443f1d3091981649bc0885859d2bcb6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sail_centre_2222
+    second: {fileID: 2100000, guid: 826b5ecafe8c762428c35f7cd76cfc60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sail_jib_2
+    second: {fileID: 2100000, guid: e4fb28a51d775ed4bafbc66a9e35f46a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sail_jib_9998
+    second: {fileID: 2100000, guid: d7304d6f427af354f91606c135f35f80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sail_jib_ugu
+    second: {fileID: 2100000, guid: e8673d6c3ed1b7340b5d001deb4febc6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sail_restangle
+    second: {fileID: 2100000, guid: 8363ba439825a0241bdba2c1d6336e5d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sail_trapec
+    second: {fileID: 2100000, guid: b33bab19a2e21b440b6587f80b74c993, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wood_001_blue
+    second: {fileID: 2100000, guid: d694f138a9a03cc4bb45199e29482088, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: z_Bort2_blue
+    second: {fileID: 2100000, guid: 5b0cbdef4c45d0642b5e9feca3534de4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: z_bort2
+    second: {fileID: 2100000, guid: def3dd130ac53e043812dedde7ffeb9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: z_bort_01_01_01_01
+    second: {fileID: 2100000, guid: 9fa399fd842360d41acbafa1a54ada3e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: z_bort_1_01_01
+    second: {fileID: 2100000, guid: 115b71731a1c8c5409eb37e9194db713, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: z_bort_2
+    second: {fileID: 2100000, guid: 71f0a47da4f875a4784fd5df973e608a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: z_bort_2_2
+    second: {fileID: 2100000, guid: 19a4c5334ae831d4197dfbeaf1739749, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: z_bort_2_2_2_2_2
+    second: {fileID: 2100000, guid: 289d14d467de84f4a91c1b34de3502ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: z_bort_5
+    second: {fileID: 2100000, guid: fff9d1b23c0d023489309759a4ec439e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: z_bort_5_5_5
+    second: {fileID: 2100000, guid: d797f74bcde53a2468ff2323374d9095, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zbort_2_red
+    second: {fileID: 2100000, guid: e424a7a52bc8c8749b0d8c97a5bab746, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: board_wood_sm_spec
+    second: {fileID: 2800000, guid: 6b25ba0b8c4663246b8b2c5e0da6ade1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cannons_d
+    second: {fileID: 2800000, guid: 41af28eb5e532144484ad3a471e89cb4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cannons_s_spec
+    second: {fileID: 2800000, guid: a4815c64da09ba04e8f3cd6376429476, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: deck_001
+    second: {fileID: 2800000, guid: af6af4a4bf85c9841b13e7c748c98f20, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: deck_001_sm_spec
+    second: {fileID: 2800000, guid: badba3d1fe73ed848838d7483622c32a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lamp_d
+    second: {fileID: 2800000, guid: 553b36ddeb39a274d950e405c2447f02, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: masts_constructor_d
+    second: {fileID: 2800000, guid: fa4be13cd1e478a479f263f08a0cefcc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: masts_constructor_s_spec
+    second: {fileID: 2800000, guid: b2c6c85f130ea06479602bf86f737d01, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: net_001
+    second: {fileID: 2800000, guid: c1a02bcaec313454da44f93b447dba6a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: net_001_alpha
+    second: {fileID: 2800000, guid: a4a304b97fe48eb4e8fa7b46ed697d97, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: painted_wood
+    second: {fileID: 2800000, guid: 3b5f15898bbe9e340ac90d14809bd110, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: painted_wood_sm_spec
+    second: {fileID: 2800000, guid: 3cd9ef1b117694049b53b0038c0f427f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pandora_d
+    second: {fileID: 2800000, guid: a4c72999413144144a94ca0b498759c2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pandora_mask_spec
+    second: {fileID: 2800000, guid: e7dbdc2c097379c41b74d1a8b55ba241, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pnd_figure
+    second: {fileID: 2800000, guid: 327815ff76359024ea6016067c67948a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pnd_figure_s_spec
+    second: {fileID: 2800000, guid: 17450afadf3a7a34dbde12c1618f19db, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: rail_wood_001_s
+    second: {fileID: 2800000, guid: 4b4e0d0d04afd014e972e55f439463b7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: rail_wood_001_s_spec
+    second: {fileID: 2800000, guid: b794ae24004d00940b47e76daf9f088e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: rail_wood_sm_spec
+    second: {fileID: 2800000, guid: 65ae2cc27cd728845ad747df7ba4e1a1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: rope_black
+    second: {fileID: 2800000, guid: 76de3c80e863ba249aeb551b8167dadb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: rope_vant_2
+    second: {fileID: 2800000, guid: 5f1518d03d0145c4289c63af93ae68e8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: rope_vant_2_alpha
+    second: {fileID: 2800000, guid: 425eb9c64e3ac4d4fbd6251257b7d8f3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sail_centr
+    second: {fileID: 2800000, guid: 0ab2116463624c342b3b991c63a95604, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sail_jib
+    second: {fileID: 2800000, guid: a4d0c9a1cba93e649b8e6308b675b3fa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sail_rectangle
+    second: {fileID: 2800000, guid: 401d668cd811ee043ab9c42c3faeb1c2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sail_rectanglel
+    second: {fileID: 2800000, guid: aec4cde844c3a0c4eae428744c713608, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sail_trapec
+    second: {fileID: 2800000, guid: ce6f5dba646296c48ab5e4a78311539e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: swivelgun
+    second: {fileID: 2800000, guid: 107f875544b03474d9830e969c065c9a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: swivelgun_s_spec
+    second: {fileID: 2800000, guid: 09f650a190a2b5b4fa17e376cec972de, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: z_bort_1
+    second: {fileID: 2800000, guid: e3b64a60e3b71d448a899d01d5043cae, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: z_bort_1_s_spec
+    second: {fileID: 2800000, guid: 44e61074ae466bf46b5ee02c4fbcd2e7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: z_bort_2
+    second: {fileID: 2800000, guid: b722f177e12e52d45ac439dd99894da1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: z_bort_2_s_spec
+    second: {fileID: 2800000, guid: bf36c27e5bf8951418603495834e9d7f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: z_bort_2rgb_s_spec
+    second: {fileID: 2800000, guid: ae3400a6d40f07949a2225a18dfd3fe7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: z_bort_3_spec
+    second: {fileID: 2800000, guid: 6fc8637e458e66448b910a69253e5e4b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: z_bort_5
+    second: {fileID: 2800000, guid: d8f111ab718d68143a0bf48d406f5e06, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: z_glass_dirt_01
+    second: {fileID: 2800000, guid: 722f343aaaa281b45a3b39d05786673c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: z_railing_2
+    second: {fileID: 2800000, guid: d0b2a38158d48db44813a0087c5884c1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: z_railing_2_spec
+    second: {fileID: 2800000, guid: ce525d5cc91bf924a901fbc808e2da31, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
