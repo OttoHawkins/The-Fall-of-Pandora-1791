@@ -9,7 +9,7 @@ public class ShipController : MonoBehaviour
     public float stopSpeedThreshold = 0.1f;
     public Camera shipCamera;
     public Transform aimModeTransform;
-    public float aimTransitionSpeed = 5f; // Скорость перехода камеры в режим прицеливания
+    public float aimTransitionSpeed = 5f; 
 
     private Rigidbody rb;
     private float currentSpeed = 0f;

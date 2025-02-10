@@ -5,59 +5,58 @@ using System.Collections;
 
 public class LogoScene : MonoBehaviour
 {
-    public Text companyNameText; // Текст для отображения
-    public float displayDuration = 10.0f; // Время отображения текста
-    public float letterDelay = 0.1f; // Задержка между буквами
-    private string companyName = "Торресов пролив\r\n 28 августа 1791\r\n"; // Здесь можно поменять текст
+    public Text companyNameText; 
+    public float displayDuration = 10.0f; 
+    public float letterDelay = 0.1f; 
+    private string companyName = "Торресов пролив\r\n 28 августа 1791\r\n"; 
     private bool textDisplayed = false;
 
-    public Text loadingText; // Текст для анимации загрузки
-    private string loadingMessage = "Загрузка"; // Сообщение загрузки
+    public Text loadingText; 
+    private string loadingMessage = "Загрузка"; 
 
-    public AudioClip displaySound; // Звук для воспроизведения
-    private AudioSource audioSource; // Компонент AudioSource
+    public AudioClip displaySound; 
+    private AudioSource audioSource;
 
     void Start()
     {
-        audioSource = gameObject.AddComponent<AudioSource>(); // Добавляем AudioSource к объекту
-        loadingText.gameObject.SetActive(true); // Показываем текст загрузки
-        StartCoroutine(AnimateText()); // Начинаем корутину для анимации текста
-        StartCoroutine(AnimateLoadingText()); // Начинаем анимацию сообщения загрузки
+        audioSource = gameObject.AddComponent<AudioSource>(); 
+        loadingText.gameObject.SetActive(true);
+        StartCoroutine(AnimateText()); 
+        StartCoroutine(AnimateLoadingText()); 
     }
 
     IEnumerator AnimateText()
     {
-        // Отображение текста по одной букве
-        companyNameText.text = ""; // Очищаем текст
+      
+        companyNameText.text = ""; 
         foreach (char letter in companyName.ToCharArray())
         {
-            companyNameText.text += letter; // Добавляем букву
-            audioSource.PlayOneShot(displaySound); // Воспроизводим звук при добавлении буквы
-            yield return new WaitForSeconds(letterDelay); // Ждем перед следующей буквой
+            companyNameText.text += letter; 
+            audioSource.PlayOneShot(displaySound); 
+            yield return new WaitForSeconds(letterDelay); 
         }
 
-        // Ждем некоторое время, чтобы дать понять игроку, что текст полностью отображён
-        yield return new WaitForSeconds(0.5f); // 0.5 секунды задержки перед продолжением
+   
+        yield return new WaitForSeconds(0.5f);
 
-        // Ждем, пока весь текст будет отображен
+     
         textDisplayed = true;
         yield return new WaitForSeconds(displayDuration);
 
-        // Плавное исчезновение текста
+
         for (float t = 1; t > 0; t -= Time.deltaTime)
         {
             Color color = companyNameText.color;
-            color.a = t; // Плавно уменьшаем альфа
+            color.a = t;
             companyNameText.color = color;
-            yield return null; // Ждем один кадр
+            yield return null;
         }
 
-        // Скрыть текст загрузки в конце
+   
         loadingText.gameObject.SetActive(false);
 
-        // Загружаем следующую сцену
-        SceneManager.LoadScene("Lvl1"); // Убедитесь, что вместо "SampleScene" указано имя вашей следующей сцены
-    }
+  
+        SceneManager.LoadScene("Lvl1"); 
 
     IEnumerator AnimateLoadingText()
     {

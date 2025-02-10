@@ -26,6 +26,8 @@ public class MainMenu : MonoBehaviour
     private void UpdateSoundState()
     {
      
+
+
         AudioListener.volume = soundToggle.isOn ? 1f : 0f;
 
         PlayerPrefs.SetInt("Sound", soundToggle.isOn ? 1 : 0);
