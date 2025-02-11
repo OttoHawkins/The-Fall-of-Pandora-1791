@@ -7,15 +7,19 @@ public class ShipController : MonoBehaviour
     public float turnSpeed = 20f;
     public float deceleration = 0.3f;
     public float stopSpeedThreshold = 0.1f;
-    public Camera shipCamera;
-    public Transform aimModeTransform;
-    public float aimTransitionSpeed = 5f; 
 
     private Rigidbody rb;
     private float currentSpeed = 0f;
     private bool isAiming = false;
-    private Vector3 defaultCameraPosition;
-    private Quaternion defaultCameraRotation;
+
+    public Camera mainCamera; // Основная камера
+    public Camera aimingCamera; // Камера для режима прицеливания
+    public float cameraRotationSpeed = 2f; // Скорость вращения камеры
+    public float maxCameraAngle = 30f; // Максимальный угол наклона камеры
+    public float maxYawAngle = 60f; // Максимальный угол поворота камеры (по горизонтали)
+
+    private float cameraPitch = 0f; // Угол наклона камеры
+    private float cameraYaw = 100f; // Угол поворота камеры
 
     void Start()
     {
@@ -23,25 +27,31 @@ public class ShipController : MonoBehaviour
         rb.linearDamping = 1f;
         rb.angularDamping = 3f;
 
-        if (shipCamera != null)
+        if (mainCamera == null || aimingCamera == null)
         {
-            defaultCameraPosition = shipCamera.transform.localPosition;
-            defaultCameraRotation = shipCamera.transform.localRotation;
+            Debug.LogError("Обе камеры должны быть установлены в ShipController!");
         }
+
+        aimingCamera.gameObject.SetActive(false);
     }
 
     void Update()
     {
         if (Input.GetMouseButtonDown(1))
         {
-            isAiming = true;
-        }
-        else if (Input.GetMouseButtonUp(1))
-        {
-            isAiming = false;
+            isAiming = !isAiming;
+            Debug.Log("Режим прицеливания: " + isAiming);
+
+            mainCamera.gameObject.SetActive(!isAiming);
+            aimingCamera.gameObject.SetActive(isAiming);
         }
 
-        UpdateCameraPosition();
+        HandleMovement();
+
+        if (isAiming)
+        {
+            HandleCameraRotation();
+        }
     }
 
     void FixedUpdate()
@@ -91,20 +101,20 @@ public class ShipController : MonoBehaviour
         }
     }
 
-    void UpdateCameraPosition()
+    void HandleCameraRotation()
     {
-        if (shipCamera != null)
-        {
-            if (isAiming && aimModeTransform != null)
-            {
-                shipCamera.transform.position = Vector3.Lerp(shipCamera.transform.position, aimModeTransform.position, aimTransitionSpeed * Time.deltaTime);
-                shipCamera.transform.rotation = Quaternion.Lerp(shipCamera.transform.rotation, aimModeTransform.rotation, aimTransitionSpeed * Time.deltaTime);
-            }
-            else
-            {
-                shipCamera.transform.localPosition = Vector3.Lerp(shipCamera.transform.localPosition, defaultCameraPosition, aimTransitionSpeed * Time.deltaTime);
-                shipCamera.transform.localRotation = Quaternion.Lerp(shipCamera.transform.localRotation, defaultCameraRotation, aimTransitionSpeed * Time.deltaTime);
-            }
-        }
+        float mouseX = Input.GetAxis("Mouse X") * cameraRotationSpeed;
+        float mouseY = Input.GetAxis("Mouse Y") * cameraRotationSpeed;
+
+        cameraYaw += mouseX;
+        cameraPitch -= mouseY;
+
+        // Ограничиваем угол наклона (вверх-вниз)
+        cameraPitch = Mathf.Clamp(cameraPitch, -maxCameraAngle, maxCameraAngle);
+
+        // Ограничиваем угол поворота (влево-вправо)
+        cameraYaw = Mathf.Clamp(cameraYaw, -maxYawAngle, maxYawAngle);
+
+        aimingCamera.transform.localRotation = Quaternion.Euler(cameraPitch, cameraYaw, 0);
     }
 }
