@@ -2,34 +2,34 @@ using UnityEngine;
 
 public class ShipController : MonoBehaviour
 {
-    public float acceleration = 0.5f;
-    public float maxSpeed = 10f;
-    public float turnSpeed = 20f;
-    public float deceleration = 0.3f;
-    public float stopSpeedThreshold = 0.1f;
+    [SerializeField] private float acceleration = 0.5f;
+    [SerializeField] private float maxSpeed = 10f;
+    [SerializeField] private float turnSpeed = 20f;
+    [SerializeField] private float deceleration = 0.3f;
+    [SerializeField] private float stopSpeedThreshold = 0.1f;
 
     private Rigidbody rb;
     private float currentSpeed = 0f;
     private bool isAiming = false;
 
-    public Camera mainCamera;
-    public Camera aimingCamera;
-    public Transform shootPoint;
-    public float cameraRotationSpeed = 2f;
-    public float maxCameraAngle = 30f;
-    public float maxYawAngle = 60f;
+    [SerializeField] private Camera mainCamera;
+    [SerializeField] private Camera aimingCamera;
+    [SerializeField] private Transform shootPoint;
+    [SerializeField] private float cameraRotationSpeed = 2f;
+    [SerializeField] private float maxCameraAngle = 30f;
+    [SerializeField] private float maxYawAngle = 60f;
 
     private float cameraPitch = 0f;
     private float cameraYaw = 100f;
 
-    public float shootRange = 100f;
-    public LayerMask shootableLayer;
-    public GameObject hitEffectPrefab;
-    public GameObject muzzleFlashPrefab;
-    public AudioSource shootSound;
-    public AudioSource explosionSound;
+    [SerializeField] private float shootRange = 100f;
+    [SerializeField] private LayerMask shootableLayer;
+    [SerializeField] private GameObject hitEffectPrefab;
+    [SerializeField] private GameObject muzzleFlashPrefab;
+    [SerializeField] private AudioSource shootSound;
+    [SerializeField] private AudioSource explosionSound;
 
-    void Start()
+    private void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.linearDamping = 1f;
@@ -47,7 +47,7 @@ public class ShipController : MonoBehaviour
         aimingCamera.gameObject.SetActive(false);
     }
 
-    void Update()
+  private  void Update()
     {
         if (Input.GetMouseButtonDown(1))
         {
@@ -70,12 +70,12 @@ public class ShipController : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
+   private  void FixedUpdate()
     {
         HandleMovement();
     }
 
-    void HandleMovement()
+    private void HandleMovement()
     {
         float moveInput = Input.GetAxis("Vertical");
         float turnInput = Input.GetAxis("Horizontal");
@@ -114,7 +114,7 @@ public class ShipController : MonoBehaviour
         }
     }
 
-    void HandleCameraRotation()
+   private  void HandleCameraRotation()
     {
         float mouseX = Input.GetAxis("Mouse X") * cameraRotationSpeed;
         float mouseY = Input.GetAxis("Mouse Y") * cameraRotationSpeed;
@@ -128,8 +128,9 @@ public class ShipController : MonoBehaviour
         aimingCamera.transform.localRotation = Quaternion.Euler(cameraPitch, cameraYaw, 0);
     }
 
-    void Shoot()
+   private  void Shoot()
     {
+    
         if (shootSound != null && shootSound.clip != null)
         {
             shootSound.Stop();
@@ -140,6 +141,7 @@ public class ShipController : MonoBehaviour
             Debug.LogWarning("AudioSource или AudioClip не назначен!");
         }
 
+     
         if (muzzleFlashPrefab != null)
         {
             GameObject muzzleFlash = Instantiate(muzzleFlashPrefab, shootPoint.position, shootPoint.rotation);
@@ -150,6 +152,13 @@ public class ShipController : MonoBehaviour
         if (Physics.Raycast(shootPoint.position, shootPoint.forward, out hit, shootRange, shootableLayer))
         {
             Debug.Log("Попадание в " + hit.collider.name);
+
+            var hitObject = hit.collider.gameObject;
+            var enemyShipController = hitObject.GetComponent<EnemyShipController>();
+            if (enemyShipController != null)
+            {
+                enemyShipController.TakeHit();
+            }
 
             if (hitEffectPrefab != null)
             {

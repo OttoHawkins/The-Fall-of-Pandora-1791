@@ -2,19 +2,19 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public Transform target;  
-    public Transform alternativeView;  
-    public float distance = 10f;  
-    public float rotationSpeed = 5f;  
-    public float height = 5f;  
-    public float minYAngle = 10f;  
-    public float maxYAngle = 60f;  
+   [SerializeField] private Transform target;
+   [SerializeField] private Transform alternativeView;
+   [SerializeField] private float distance = 10f;
+   [SerializeField] private float rotationSpeed = 5f;
+   [SerializeField] private float height = 5f;
+   [SerializeField] private float minYAngle = 10f;
+   [SerializeField] private float maxYAngle = 60f;  
 
     private float currentX = 0f;  
     private float currentY = 20f;  
     private bool isAlternativeView = false;
 
-    void Update()
+    private void Update()
     {
         if (target != null)
         {
@@ -35,7 +35,7 @@ public class CameraController : MonoBehaviour
         }
     }
 
-    void LateUpdate()
+     private void LateUpdate()
     {
         if (target != null)
         {

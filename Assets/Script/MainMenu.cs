@@ -4,12 +4,12 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    public GameObject settingsPanel;
-    public GameObject infoPanel;  
-    public GameObject mainMenuPanel; 
-    public Toggle soundToggle;
+    [SerializeField] private  GameObject settingsPanel;
+    [SerializeField] private  GameObject infoPanel;
+    [SerializeField] private GameObject mainMenuPanel;
+    [SerializeField] private Toggle soundToggle;
 
-    void Start()
+    private void Start()
     {
         settingsPanel.SetActive(false);
         infoPanel.SetActive(false);
